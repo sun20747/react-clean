@@ -1,0 +1,19 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "concurrently -k yarn:start:api yarn:start:ui",
+    "start:api": "yarn --cwd api start ---เข้าไปในโฟลเดอร์ api แล้วใช้คำสั่ง start",
+    "start:ui": "yarn --cwd ui start ---เข้าไปในโฟลเดอร์ ui แล้วใช้คำสั่ง start"
+  },
+  "dependencies": {
+    "concurrently": "^6.3.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.4.1"
+  }
+}
